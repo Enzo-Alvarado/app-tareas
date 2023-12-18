@@ -1,0 +1,100 @@
+.tarea-formulario {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.tarea-input {
+  width: 350px;
+  font-size: 18px;
+  background: linear-gradient(
+    to bottom,
+    rgba(6, 238, 255, 0.5),
+    rgba(139, 247, 255, 0.1)
+  );
+  padding: 14px 32px 14px 16px;
+  border: none;
+  border-top: 3px solid #06eeff;
+  outline: none;
+}
+
+.tarea-input:hover {
+  border-top: 3px solid #03c2f1;
+}
+
+/*    BOTON     */
+
+.button {
+  position: relative;
+  width: 150px;
+  height: 51px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 2px solid #06eeff;
+  background-color: #000;
+}
+
+.button,
+.button__icon,
+.button__text {
+  transition: all 0.3s;
+}
+
+.button .button__text {
+  transform: translateX(30px);
+  color: #06eeff;
+  font-weight: 600;
+}
+
+.button .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #000;
+  border-left: 1px solid #06eeff;
+  border-right: 2px solid #06eeff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button .svg {
+  width: 30px;
+  stroke: #06eeff;
+}
+
+.button:hover {
+  background: #000;
+}
+
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button:active .button__icon {
+  background-color: #000;
+}
+
+.button:active {
+  border: 1px solid #06eeff;
+}
+
+@media screen and (max-width: 617px) {
+  .tarea-input {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .tarea-input {
+    width: 320px;
+  }
+}
